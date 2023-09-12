@@ -1,6 +1,6 @@
 Install CocoaPods with HomeBrew:
 
-- brew install cocoa pods
+- brew install cocoapods
 
 Execute this command in the project folder to install dependencies in the pod file 
 
