@@ -14,6 +14,8 @@
 		DF8866D82AB09BEE0044A87A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8866D62AB09BEE0044A87A /* LaunchScreen.storyboard */; };
 		DF8866E62AB0A46E0044A87A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8866E52AB0A46E0044A87A /* LoginViewController.swift */; };
 		DF8866E82AB0A7040044A87A /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8866E72AB0A7040044A87A /* Util.swift */; };
+		DF8866EA2AB0BA580044A87A /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8866E92AB0BA580044A87A /* registerViewController.swift */; };
+		DF8866EC2AB0C5620044A87A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF8866EB2AB0C5620044A87A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		DF8866D92AB09BEE0044A87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF8866E52AB0A46E0044A87A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DF8866E72AB0A7040044A87A /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		DF8866E92AB0BA580044A87A /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		DF8866EB2AB0C5620044A87A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		DF8866CA2AB09BED0044A87A /* WhatsAppCL */ = {
 			isa = PBXGroup;
 			children = (
+				DF8866EB2AB0C5620044A87A /* GoogleService-Info.plist */,
 				DF8866E42AB09D5B0044A87A /* LoginViews */,
 				DF8866E32AB09D4B0044A87A /* CoreViews */,
 				DF8866E22AB09D400044A87A /* SecondaryViews */,
@@ -114,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				DF8866E52AB0A46E0044A87A /* LoginViewController.swift */,
+				DF8866E92AB0BA580044A87A /* registerViewController.swift */,
 			);
 			path = LoginViews;
 			sourceTree = "<group>";
@@ -177,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF8866D82AB09BEE0044A87A /* LaunchScreen.storyboard in Resources */,
+				DF8866EC2AB0C5620044A87A /* GoogleService-Info.plist in Resources */,
 				DF8866D52AB09BEE0044A87A /* Assets.xcassets in Resources */,
 				DF8866D32AB09BED0044A87A /* Main.storyboard in Resources */,
 			);
@@ -192,6 +199,7 @@
 				DF8866E62AB0A46E0044A87A /* LoginViewController.swift in Sources */,
 				DF8866CC2AB09BED0044A87A /* AppDelegate.swift in Sources */,
 				DF8866CE2AB09BED0044A87A /* SceneDelegate.swift in Sources */,
+				DF8866EA2AB0BA580044A87A /* registerViewController.swift in Sources */,
 				DF8866E82AB0A7040044A87A /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
