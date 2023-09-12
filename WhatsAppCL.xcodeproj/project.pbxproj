@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		DF8866CC2AB09BED0044A87A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8866CB2AB09BED0044A87A /* AppDelegate.swift */; };
 		DF8866CE2AB09BED0044A87A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8866CD2AB09BED0044A87A /* SceneDelegate.swift */; };
-		DF8866D02AB09BED0044A87A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8866CF2AB09BED0044A87A /* ViewController.swift */; };
 		DF8866D32AB09BED0044A87A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8866D12AB09BED0044A87A /* Main.storyboard */; };
 		DF8866D52AB09BEE0044A87A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8866D42AB09BEE0044A87A /* Assets.xcassets */; };
 		DF8866D82AB09BEE0044A87A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8866D62AB09BEE0044A87A /* LaunchScreen.storyboard */; };
+		DF8866E62AB0A46E0044A87A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8866E52AB0A46E0044A87A /* LoginViewController.swift */; };
+		DF8866E82AB0A7040044A87A /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8866E72AB0A7040044A87A /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF8866C82AB09BED0044A87A /* WhatsAppCL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsAppCL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF8866CB2AB09BED0044A87A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF8866CD2AB09BED0044A87A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF8866CF2AB09BED0044A87A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF8866D22AB09BED0044A87A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF8866D42AB09BEE0044A87A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF8866D72AB09BEE0044A87A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF8866D92AB09BEE0044A87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF8866E52AB0A46E0044A87A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DF8866E72AB0A7040044A87A /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,64 @@
 		DF8866CA2AB09BED0044A87A /* WhatsAppCL */ = {
 			isa = PBXGroup;
 			children = (
+				DF8866E42AB09D5B0044A87A /* LoginViews */,
+				DF8866E32AB09D4B0044A87A /* CoreViews */,
+				DF8866E22AB09D400044A87A /* SecondaryViews */,
+				DF8866E12AB09D1D0044A87A /* CustomCells */,
+				DF8866E02AB09D0C0044A87A /* Model */,
+				DF8866DF2AB09CF90044A87A /* Util */,
 				DF8866CB2AB09BED0044A87A /* AppDelegate.swift */,
-				DF8866CD2AB09BED0044A87A /* SceneDelegate.swift */,
-				DF8866CF2AB09BED0044A87A /* ViewController.swift */,
-				DF8866D12AB09BED0044A87A /* Main.storyboard */,
 				DF8866D42AB09BEE0044A87A /* Assets.xcassets */,
-				DF8866D62AB09BEE0044A87A /* LaunchScreen.storyboard */,
 				DF8866D92AB09BEE0044A87A /* Info.plist */,
+				DF8866D62AB09BEE0044A87A /* LaunchScreen.storyboard */,
+				DF8866D12AB09BED0044A87A /* Main.storyboard */,
+				DF8866CD2AB09BED0044A87A /* SceneDelegate.swift */,
 			);
 			path = WhatsAppCL;
+			sourceTree = "<group>";
+		};
+		DF8866DF2AB09CF90044A87A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DF8866E72AB0A7040044A87A /* Util.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DF8866E02AB09D0C0044A87A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF8866E12AB09D1D0044A87A /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		DF8866E22AB09D400044A87A /* SecondaryViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SecondaryViews;
+			sourceTree = "<group>";
+		};
+		DF8866E32AB09D4B0044A87A /* CoreViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreViews;
+			sourceTree = "<group>";
+		};
+		DF8866E42AB09D5B0044A87A /* LoginViews */ = {
+			isa = PBXGroup;
+			children = (
+				DF8866E52AB0A46E0044A87A /* LoginViewController.swift */,
+			);
+			path = LoginViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF8866D02AB09BED0044A87A /* ViewController.swift in Sources */,
+				DF8866E62AB0A46E0044A87A /* LoginViewController.swift in Sources */,
 				DF8866CC2AB09BED0044A87A /* AppDelegate.swift in Sources */,
 				DF8866CE2AB09BED0044A87A /* SceneDelegate.swift in Sources */,
+				DF8866E82AB0A7040044A87A /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
