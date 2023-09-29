@@ -45,7 +45,6 @@ class registerViewController: UIViewController, UIImagePickerControllerDelegate 
         return false
     }
     
-    
     @IBAction func cancelBtnClicked(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -53,7 +52,46 @@ class registerViewController: UIViewController, UIImagePickerControllerDelegate 
     @IBAction func finishBtnClicked(_ sender: Any) {
     }
     
-    @objc func profileImageClicked() {
-        
+    // detect background touch when keyboard opened
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
+
+    @objc func profileImageClicked() {
+        showActionSheet()
+    }
+    
+    func showActionSheet() {
+        // declaring action sheet
+        let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        // declaring library button
+        let library = UIAlertAction(title: "Photo Library", style: .default) { (action) in
+                // checking availability of photo library
+            if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+                self.showPicker(with: .photoLibrary)
+            }
+        }
+        
+        // declaring cancel button
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        // adding buttons to the sheet
+        sheet.addAction(library)
+        sheet.addAction(cancel)
+        
+        // present action sheet to the user
+        self.present(sheet, animated: true, completion: nil)
+    }
+    
+    func showPicker(with source: UIImagePickerController.SourceType) {
+        let picker = UIImagePickerController()
+        
+        picker.delegate = self
+        picker.allowsEditing = true
+        picker.sourceType = source
+        
+        present(picker, animated: true, completion: nil)
+    }
+
 }
