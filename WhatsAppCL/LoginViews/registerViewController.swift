@@ -19,6 +19,7 @@ class registerViewController: UIViewController, UIImagePickerControllerDelegate 
     @IBOutlet weak var finishBtn: UIButton!
     @IBOutlet var profileImageGestureRecognizer: UITapGestureRecognizer!
     
+    var avatarString = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,5 +94,39 @@ class registerViewController: UIViewController, UIImagePickerControllerDelegate 
         
         present(picker, animated: true, completion: nil)
     }
+    
+    
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[UIImagePickerController.InfoKey(rawValue: convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.editedImage))] as? UIImage
+        
+        let picturePath = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        
+        // assign selected picture to profileImageView
+        self.profileImageView.image = picturePath
+        
+        let pictureData = image?.jpegData(compressionQuality: 0.4)!
+        avatarString = (pictureData?.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0)))!
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    private func getAvatar() -> String {
+        if avatarString == "" {
+            var avatarStr = ""
+            
+            imageFromInitials(name: nameTextField.text!) { (avatarInitials) in
+                let avatarImg = avatarInitials.jpegData(compressionQuality: 0.7)
+                avatarStr = avatarImg!.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0))
+            }
+            
+            return avatarStr
+        } else {
+            return avatarString
+        }
+    }
+}
 
+fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+    return input.rawValue
 }

@@ -46,7 +46,7 @@ func instantiateViewController(identifier: String, animated: Bool, by vc: UIView
     vc.present(newViewController, animated: animated, completion: completion)
 }
 
-func imageFromInitials(name: String?, withBlock: @escaping (_ image: CGContext) -> Void) {
+func imageFromInitials(name: String?, withBlock: @escaping (_ image: UIImage) -> Void) {
     var fullName: String!
     var size = 36
     
@@ -76,10 +76,10 @@ func imageFromInitials(name: String?, withBlock: @escaping (_ image: CGContext) 
     UIGraphicsBeginImageContext(lblNameInitialize.frame.size)
     lblNameInitialize.layer.render(in: UIGraphicsGetCurrentContext()!)
     
-    let img = UIGraphicsGetCurrentContext()
+    let img = UIGraphicsImageRendererContext().currentImage
     UIGraphicsEndImageContext()
     
-    withBlock(img!)
+    withBlock(img)
 }
 
 let dateFormat = "ddMMyyyHHmmss"
