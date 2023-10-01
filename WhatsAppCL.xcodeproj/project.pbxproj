@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A774652B4E2DB22E232639F8 /* Pods_WhatsAppCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE09D3664D1748871061BE8 /* Pods_WhatsAppCL.framework */; };
+		DF69B21B2AC9C19C00843C5F /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF69B21A2AC9C19C00843C5F /* FUser.swift */; };
 		DF8866CC2AB09BED0044A87A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8866CB2AB09BED0044A87A /* AppDelegate.swift */; };
 		DF8866CE2AB09BED0044A87A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8866CD2AB09BED0044A87A /* SceneDelegate.swift */; };
 		DF8866D32AB09BED0044A87A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8866D12AB09BED0044A87A /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		5BE09D3664D1748871061BE8 /* Pods_WhatsAppCL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsAppCL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D5F33526BBC7C26AA9961F /* Pods-WhatsAppCL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsAppCL.release.xcconfig"; path = "Target Support Files/Pods-WhatsAppCL/Pods-WhatsAppCL.release.xcconfig"; sourceTree = "<group>"; };
 		68B4ACA6E36A4579877BA04E /* Pods-WhatsAppCL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsAppCL.debug.xcconfig"; path = "Target Support Files/Pods-WhatsAppCL/Pods-WhatsAppCL.debug.xcconfig"; sourceTree = "<group>"; };
+		DF69B21A2AC9C19C00843C5F /* FUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
 		DF8866C82AB09BED0044A87A /* WhatsAppCL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsAppCL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF8866CB2AB09BED0044A87A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF8866CD2AB09BED0044A87A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,7 +90,6 @@
 		DF8866CA2AB09BED0044A87A /* WhatsAppCL */ = {
 			isa = PBXGroup;
 			children = (
-				DF8866EB2AB0C5620044A87A /* GoogleService-Info.plist */,
 				DF8866E42AB09D5B0044A87A /* LoginViews */,
 				DF8866E32AB09D4B0044A87A /* CoreViews */,
 				DF8866E22AB09D400044A87A /* SecondaryViews */,
@@ -96,11 +97,12 @@
 				DF8866E02AB09D0C0044A87A /* Model */,
 				DF8866DF2AB09CF90044A87A /* Util */,
 				DF8866CB2AB09BED0044A87A /* AppDelegate.swift */,
+				DF8866CD2AB09BED0044A87A /* SceneDelegate.swift */,
 				DF8866D42AB09BEE0044A87A /* Assets.xcassets */,
+				DF8866EB2AB0C5620044A87A /* GoogleService-Info.plist */,
 				DF8866D92AB09BEE0044A87A /* Info.plist */,
 				DF8866D62AB09BEE0044A87A /* LaunchScreen.storyboard */,
 				DF8866D12AB09BED0044A87A /* Main.storyboard */,
-				DF8866CD2AB09BED0044A87A /* SceneDelegate.swift */,
 			);
 			path = WhatsAppCL;
 			sourceTree = "<group>";
@@ -117,6 +119,7 @@
 		DF8866E02AB09D0C0044A87A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DF69B21A2AC9C19C00843C5F /* FUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				DF8866E62AB0A46E0044A87A /* LoginViewController.swift in Sources */,
 				DF8866CC2AB09BED0044A87A /* AppDelegate.swift in Sources */,
 				DF8866CE2AB09BED0044A87A /* SceneDelegate.swift in Sources */,
+				DF69B21B2AC9C19C00843C5F /* FUser.swift in Sources */,
 				DF8866EA2AB0BA580044A87A /* registerViewController.swift in Sources */,
 				DF8866E82AB0A7040044A87A /* Util.swift in Sources */,
 				DFF7646E2AC737BE00478994 /* Constants.swift in Sources */,
